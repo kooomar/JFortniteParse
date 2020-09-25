@@ -64,7 +64,7 @@ class FPropertyTag : UClass {
                     Ar.seek(finalPos)
                 } catch (e: ParserException) {
                     if (finalPos != Ar.pos()) {
-                        logger.warn("Failed to read FPropertyTagType $name (${tagData ?: propertyType}), skipping it, please report", e)
+                        logger.warn("Failed to read FPropertyTagType $name (${tagData ?: propertyType}), skipping it, please report FUCK", e)
                     }
                     //Also no need to crash here, just seek to the desired offset
                     Ar.seek(finalPos)
